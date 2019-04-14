@@ -6,14 +6,18 @@
   "license": "MIT",
   "scripts": {
     "dev": "nodemon src/server.js",
-    "start": "node src/server.js"
+    "start": "node src/server.js",
+    "lint": "eslint src/**/*.js",
+    "lint:fix": "eslint src/**/*.js --fix"
   },
   "dependencies": {
+    "cors": "^2.8.5",
     "dotenv": "^7.0.0",
     "express": "^4.16.4",
     "mongoose": "^5.5.0",
     "multer": "^1.4.1",
-    "nodemon": "^1.18.11"
+    "nodemon": "^1.18.11",
+    "socket.io": "^2.2.0"
   },
   "devDependencies": {
     "eslint": "5.3.0",
